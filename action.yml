@@ -32,15 +32,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Stop Application Pool
-      shell: pwsh
-      run: >
-        ${{ github.action_path }}/Scripts/Set-ApplicationPool.ps1
-        StopAppPool
-        ${{ inputs.website-name }}
-        ${{ inputs.server-computer-name }}
-        ${{ inputs.server-username }}
-        ${{ inputs.server-password }}
     - name: Deploy Application
       shell: pwsh
       run: >
@@ -53,15 +44,6 @@ runs:
         ${{ inputs.server-password }}
         ${{ inputs.target-delete }}
         ${{ inputs.skip-directory-path }}
-    - name: Start Application Pool
-      shell: pwsh
-      run: >
-        ${{ github.action_path }}/Scripts/Set-ApplicationPool.ps1
-        StartAppPool
-        ${{ inputs.website-name }}
-        ${{ inputs.server-computer-name }}
-        ${{ inputs.server-username }}
-        ${{ inputs.server-password }}
 branding:
   icon: "upload-cloud"
   color: "purple"
