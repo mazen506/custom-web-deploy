@@ -1,5 +1,5 @@
 
-$msdeploy = "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe";
+$msdeploy = "C:\Program Files (x86)\IIS\Microsoft Web Deploy V3\msdeploy.exe";
 
 $source = $args[0]
 $destination = $args[1]
