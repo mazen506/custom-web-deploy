@@ -1,5 +1,5 @@
 
-$msdeploy = "C:\Program Files (x86)\IIS\Microsoft Web Deploy V3\msdeploy.exe";
+$msdeploy = "C:\Program Files (x86)\IIS\Microsoft Web Deploy V4\msdeploy.exe";
 
 $recycleMode = $args[0]
 $recycleApp = $args[1]
